@@ -4,3 +4,9 @@ deployment:
 ports:
   web:
     redirectTo: websecure
+
+service:
+  annotations:
+    "metallb.universe.tf/allow-shared-ip": "default"
+  spec:
+    loadBalancerIP: "45.151.166.29"
