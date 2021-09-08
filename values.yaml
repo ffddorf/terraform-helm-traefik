@@ -4,9 +4,3 @@ deployment:
 ports:
   web:
     redirectTo: websecure
-
-  jvb:
-    port: 10000
-    expose: true
-    exposedPort: 10000
-    protocol: UDP
